@@ -3,6 +3,12 @@
   min-height: 65px;
   padding: 10px 20px 11px 20px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px 0 31px;
+  }
 }
 
 .header__block {
@@ -10,13 +16,25 @@
   flex-wrap: wrap;
   min-height: 38px;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    margin: 0 93px 0 0;
+  }
 }
 
 .header__logo {
-  width: 34px;
-  height: 38px;
-  background-image: url("../../img/logo-mobile.svg");
-  background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .header__title {
@@ -25,6 +43,10 @@
   background-image: url("../../img/header-title.svg");
   background-repeat: no-repeat;
   margin: 13px 0 0 57px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .header__nav {
@@ -39,6 +61,12 @@
     position: static;
     min-height: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    min-height: 36px;
+    position: static;
+    width: 440px;
+  }
 }
 
 .header__nav-list {
@@ -47,6 +75,12 @@
   margin: 0;
   background-color: #ffffff;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px 0 0 0;
+  }
 }
 
 .header__nav-item {
@@ -58,6 +92,24 @@
 
   &:nth-child(3) .header__nav-link-last {
     padding: 22px 70px 24px 70px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(2) .header__nav-link {
+      padding: 0;
+    }
+
+    &:nth-child(3) .header__nav-link-last {
+      padding: 0;
+    }
+
+    &:nth-child(1) {
+      margin: 0 34px 0 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0 37px 0 0;
+    }
   }
 }
 
@@ -87,6 +139,18 @@
     background-color: #e6e6e6;
     left: 0;
     top: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 24px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -123,6 +187,21 @@
     left: 0;
     bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .header__button {
@@ -137,6 +216,10 @@
   z-index: 2;
   background-image: url("../../img/button-closed.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .header-nav--opened .header__button {
