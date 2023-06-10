@@ -13,16 +13,15 @@
   background-image: url("../../img/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 27px 35px 0 36px;
+  padding: 27px 34px 0 36px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
-    padding: 32px 0 0 117px;
+    padding: 32px 236px 0 117px;
   }
 }
 
 .nutrition__title {
-  width: 250px;
   min-height: 72px;
   font-weight: 400;
   font-size: 36px;
@@ -35,7 +34,6 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    width: 416px;
     text-align: inherit;
     margin: 0 0 43px 0;
   }
@@ -59,23 +57,33 @@
   }
 }
 
+.nutrition__indent {
+  padding: 0 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
 .nutrition__background {
-  margin: -135px 0 0 20px;
+  margin: -135px 0 0 0;
   background-image: url("../../img/can-mobile.png");
   background-repeat: no-repeat;
   min-height: 270px;
+  background-position: 50%;
 
   @media (min-width: @tablet-width) {
     height: 609px;
     margin: -69px 0 0 30px;
     background-image: url("../../img/can-tablet.png");
+    background-position: initial;
   }
 }
 
 .nutrition__button {
   display: block;
   text-decoration: none;
-  width: 280px;
+  width: 100%;
   min-height: 40px;
   background-color: #68b738;
   border: none;
@@ -85,7 +93,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 3px 20px 20px;
+  text-align: center;
+  margin: 3px 0 20px 0;
   padding: 11px 73px 11px 74px;
 
   @media (min-width: @tablet-width) {
@@ -102,21 +111,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 0 31px;
+  }
 }
 
 .nutrition__item {
   position: relative;
-  width: 280px;
+  width: 100%;
   min-height: 266px;
   background-color: #f2f2f2;
-  margin: 0 20px 20px 20px;
+  margin: 0 0 20px 0;
   padding: 20px 0 0 0;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
     min-height: 372px;
-    margin: 0 30px 30px 31px;
-    padding: 68px 316px 53px 33px;
+    margin: 0 0 30px 0;
+    padding: 68px 340px 53px 33px;
   }
 }
 
@@ -133,7 +145,7 @@
     margin: 0;
     width: 200px;
     height: 211px;
-    left: 446px;
+    right: 63px;
     top: 79px;
   }
 }
@@ -170,7 +182,7 @@
 }
 
 .nutrition__item-text {
-  width: 227px;
+  width: 100%;
   min-height: 90px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -189,7 +201,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
@@ -257,7 +268,7 @@
     margin: 0;
     width: 268px;
     height: 200px;
-    left: 412px;
+    right: 28px;
     top: 90px;
   }
 }
