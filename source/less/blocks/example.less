@@ -39,7 +39,9 @@
 .example__line {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 32px;
+  margin: 0 0 34px 0;
 
   @media (min-width: @tablet-width) {
     gap: 42px;
@@ -90,7 +92,8 @@
 .example__line-background {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 59px 0;
+  justify-content: space-between;
+  margin: -72px 0 59px;
 }
 
 .example__surface-weight {
@@ -112,7 +115,7 @@
   width: 87px;
   min-height: 24px;
   background-color: #eaeaea;
-  margin: -10px 0 0 70px;
+  margin: -10px 17px 0 0;
   padding: 0 0 0 14px;
 
   @media (min-width: @tablet-width) {
@@ -160,7 +163,8 @@
 .example__cost {
   line-height: 20px;
   text-transform: uppercase;
-  margin: 4px 0 19px 48px;
+  margin: 4px 0 19px 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 174px;
