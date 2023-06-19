@@ -29,8 +29,18 @@
         >
           <use href="img/sprite.svg#logo-tablet"></use>
         </svg>
+        <svg
+          width="202"
+          height="59"
+          viewBox="0 0 202 59"
+          class="header__logo-desktop"
+        >
+          <use href="img/sprite.svg#logo-desktop"></use>
+        </svg>
 
-        <div class="header__title"></div>
+        <svg width="101" height="18" viewBox="0 0 101 18" class="header__title">
+          <use href="img/sprite.svg#header-title"></use>
+        </svg>
       </div>
       <nav class="header__nav header__nav--nojs">
         <ul class="header__nav-list">
@@ -145,15 +155,20 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </span>
-        <div class="example__line">
-          <div class="example__weight-block">
-            <span class="example__block-text">5 КГ</span>
+        <div class="example__cost-line">
+          <div class="example__line">
+            <div class="example__weight-block">
+              <span class="example__block-text">5 КГ</span>
+            </div>
+            <div class="example__day-block">
+              <span class="example__block-text">60 ДНЕЙ</span>
+            </div>
           </div>
-          <div class="example__day-block">
-            <span class="example__block-text">60 ДНЕЙ</span>
-          </div>
+          <p class="example__cost">
+            Затраты на питание:
+            <span class="example__cost-gap">15 000 РУБ.</span>
+          </p>
         </div>
-        <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__line-background">
           <div class="example__surface-weight">
             <span class="example__weight-text">снижение веса</span>
@@ -162,91 +177,93 @@
             <span class="example__time-text">затрачено времени</span>
           </div>
         </div>
-        <div class="example__slider">
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="
-                img/left-cat-desktop.webp    1x,
-                img/left-cat-desktop@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              media="(min-width: 769px)"
-              srcset="
-                img/left-cat-tablet.webp    1x,
-                img/left-cat-tablet@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              srcset="
-                img/left-cat-mobile.webp    1x,
-                img/left-cat-mobile@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/left-cat-desktop.png, img/left-cat-desktop@2x.png"
-            />
-            <source
-              media="(min-width: 769px)"
-              srcset="img/left-cat-tablet.png, img/left-cat-tablet.png@2x.png"
-            />
-            <img
-              src="img/left-cat-mobile.png"
-              srcset="img/left-cat-mobile@2x.png 2x"
-              alt="Кот до правильного питания."
-              class="example__slider-left-image"
-              width="140"
-              height="256"
-            />
-          </picture>
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1440px)"
-              srcset="
-                img/right-cat-desktop.webp    1x,
-                img/right-cat-desktop@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              media="(min-width: 769px)"
-              srcset="
-                img/right-cat-tablet.webp    1x,
-                img/right-cat-tablet@2x.webp 2x
-              "
-            />
-            <source
-              type="image/webp"
-              srcset="
-                img/right-cat-mobile.webp    1x,
-                img/right-cat-mobile@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/right-cat-desktop.png, img/right-cat-desktop@2x.png"
-            />
-            <source
-              media="(min-width: 769px)"
-              srcset="img/right-cat-tablet.png, img/right-cat-tablet@2x.png"
-            />
-            <img
-              src="img/right-cat-mobile.png"
-              srcset="img/right-cat-mobile@2x.png 2x"
-              alt="Кот после правильного питания"
-              class="example__slider-right-image"
-              width="140"
-              height="256"
-            />
-          </picture>
-          <button type="button" class="example__button"></button>
-          <span class="example__line-button"></span>
+        <div class="example__back-color">
+          <div class="example__slider">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="
+                  img/left-cat-desktop.webp    1x,
+                  img/left-cat-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 769px)"
+                srcset="
+                  img/left-cat-tablet.webp    1x,
+                  img/left-cat-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/left-cat-mobile.webp    1x,
+                  img/left-cat-mobile@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/left-cat-desktop.png, img/left-cat-desktop@2x.png"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="img/left-cat-tablet.png, img/left-cat-tablet.png@2x.png"
+              />
+              <img
+                src="img/left-cat-mobile.png"
+                srcset="img/left-cat-mobile@2x.png 2x"
+                alt="Кот до правильного питания."
+                class="example__slider-left-image"
+                width="140"
+                height="256"
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="
+                  img/right-cat-desktop.webp    1x,
+                  img/right-cat-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 769px)"
+                srcset="
+                  img/right-cat-tablet.webp    1x,
+                  img/right-cat-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/right-cat-mobile.webp    1x,
+                  img/right-cat-mobile@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/right-cat-desktop.png, img/right-cat-desktop@2x.png"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="img/right-cat-tablet.png, img/right-cat-tablet@2x.png"
+              />
+              <img
+                src="img/right-cat-mobile.png"
+                srcset="img/right-cat-mobile@2x.png 2x"
+                alt="Кот после правильного питания"
+                class="example__slider-right-image"
+                width="140"
+                height="256"
+              />
+            </picture>
+            <button type="button" class="example__button"></button>
+            <span class="example__line-button"></span>
+          </div>
         </div>
       </section>
       <section class="search-block">

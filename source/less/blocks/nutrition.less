@@ -19,6 +19,10 @@
     background-image: none;
     padding: 32px 236px 0 117px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .nutrition__title {
@@ -123,31 +127,18 @@
   min-height: 266px;
   background-color: #f2f2f2;
   margin: 0 0 20px 0;
-  padding: 20px 40px 0 0;
+  padding: 20px 33px 14px 20px;
 
   @media (min-width: @tablet-width) {
     min-height: 372px;
     margin: 0 0 30px 0;
-    padding: 68px 340px 53px 33px;
+    padding: 77px 320px 53px 53px;
   }
 }
 
 .nutrition__line {
   display: flex;
   flex-wrap: wrap;
-}
-
-.nutrition__cat-icon {
-  margin: 0 0 0 22px;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    margin: 0;
-    width: 200px;
-    height: 211px;
-    right: 63px;
-    top: 79px;
-  }
 }
 
 .nutrition__item-title {
@@ -162,6 +153,7 @@
     word-break: break-word;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 24px 0;
   }
 }
 
@@ -177,7 +169,7 @@
     word-break: break-word;
     font-size: 36px;
     line-height: 36px;
-    margin: 9px 0 0 20px;
+    margin: 0 0 23px 0;
   }
 }
 
@@ -189,7 +181,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin: 24px 20px 0 20px;
+  margin: 24px 20px 0 0;
 
   &::before {
     content: "";
@@ -204,7 +196,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    margin: 24px 20px 52px 20px;
+    margin: 0 0 52px 0;
 
     &::before {
       display: none;
@@ -217,7 +209,7 @@
   flex-wrap: wrap;
   width: 134px;
   min-height: 24px;
-  margin: 41px 0 0 20px;
+  margin: 41px 0 0 0;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -241,7 +233,7 @@
   flex-wrap: wrap;
   width: 134px;
   min-height: 24px;
-  margin: 41px 0 0 20px;
+  margin: 41px 0 0 0;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -260,8 +252,21 @@
   }
 }
 
+.nutrition__cat-icon {
+  margin: 0 0 0 3px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    width: 200px;
+    height: 211px;
+    right: 63px;
+    top: 79px;
+  }
+}
+
 .nutrition__panther-icon {
-  margin: 3px 0 0 14px;
+  margin: 3px 0 0 -5px;
 
   @media (min-width: @tablet-width) {
     position: absolute;

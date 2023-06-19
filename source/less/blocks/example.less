@@ -1,9 +1,12 @@
 .example {
   padding: 25px 20px 0 20px;
   min-height: 659px;
+  background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
     padding: 25px 30px 0 31px;
+    background-color: inherit;
+    position: relative;
   }
 }
 
@@ -36,6 +39,14 @@
   }
 }
 
+.example__cost-line {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .example__line {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +56,9 @@
 
   @media (min-width: @tablet-width) {
     gap: 42px;
+    justify-content: inherit;
+    width: 366px;
+    margin: 0;
   }
 }
 
@@ -53,7 +67,7 @@
   min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 15px 0 0 0;
+  padding: 15px 41px;
 
   @media (min-width: @tablet-width) {
     width: 162px;
@@ -67,7 +81,6 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  padding: 0 0 15px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -80,12 +93,11 @@
   min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 15px 0 0 0;
+  padding: 15px 20px;
 
   @media (min-width: @tablet-width) {
     width: 162px;
     min-height: 72px;
-    margin: 0 124px 0 0;
   }
 }
 
@@ -94,6 +106,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: -72px 0 59px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: inherit;
+    margin: -1px 0 89px 0;
+  }
 }
 
 .example__surface-weight {
@@ -169,9 +186,30 @@
   @media (min-width: @tablet-width) {
     width: 174px;
     font-size: 20px;
-    line-height: 30px;
-    margin: 6px 0 0 0;
+    line-height: 20px;
+    margin: 11px 2px 0 0;
     text-align: right;
+  }
+}
+
+.example__cost-gap {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 8px 0 0 0;
+  }
+}
+
+.example__back-color {
+  @media (min-width: @tablet-width) {
+    &::before {
+      height: 461px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: #eaeaea;
+      left: 0;
+      bottom: 1px;
+    }
   }
 }
 
@@ -180,12 +218,12 @@
   flex-wrap: wrap;
   min-height: 256px;
   position: relative;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background-image: linear-gradient(#ffffff 28%, #eaeaea 28%);
-    margin: 0 -30px 0 -31px;
-    padding: 28px 0 0 105px;
-    min-height: 641px;
+    min-height: 612px;
+    width: 560px;
   }
 }
 
@@ -218,8 +256,8 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    top: 265px;
-    left: 365px;
+    top: 235px;
+    left: 260px;
   }
 }
 
@@ -236,7 +274,7 @@
 
   @media (min-width: @tablet-width) {
     width: 512px;
-    left: 129px;
-    top: 283px;
+    left: 24px;
+    top: 253px;
   }
 }
