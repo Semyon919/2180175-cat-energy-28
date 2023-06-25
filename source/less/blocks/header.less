@@ -15,7 +15,9 @@
 
   @media (min-width: @desktop-width) {
     min-height: 111px;
-    padding: 53px 110px 0 110px;
+    padding: 53px 106px 0 110px;
+    justify-content: inherit;
+    gap: 565px;
   }
 }
 
@@ -28,6 +30,10 @@
   @media (min-width: @tablet-width) {
     width: 174px;
     margin: 0 93px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -50,6 +56,11 @@
 }
 
 .header__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .header__title {
@@ -77,6 +88,10 @@
     min-height: 36px;
     position: static;
     width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 485px;
   }
 }
 
@@ -122,6 +137,13 @@
       margin: 0 37px 0 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(2) {
+      padding: 0 0 0 3px;
+      margin: 0 33px 0 0;
+    }
+  }
 }
 
 .header-nav--opened .header__nav-list {
@@ -162,6 +184,10 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
   }
 }
 
@@ -214,6 +240,10 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .header__button {
@@ -248,4 +278,19 @@
 
 .header__nav--nojs .header__nav-list {
   display: block;
+}
+
+//header white line
+
+.header__nav-item--index .header__nav-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    background-color: #000000;
+  }
 }

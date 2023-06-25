@@ -1,5 +1,12 @@
 .search-block {
   background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    padding: 95px 765px 107px 110px;
+  }
 }
 
 .search-block__background {
@@ -14,6 +21,14 @@
   @media (min-width: @tablet-width) {
     min-height: 199px;
     padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    min-height: 198px;
+    z-index: 1;
+    position: inherit;
+    padding: 56px 78px 56px 80px;
   }
 }
 
@@ -30,6 +45,10 @@
     line-height: 26px;
     margin: 3px 0 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 6px 0 0 0;
+  }
 }
 
 .search-block__address {
@@ -44,6 +63,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
